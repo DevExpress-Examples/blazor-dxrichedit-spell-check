@@ -1,0 +1,58 @@
+﻿@page "/"
+<style>
+    .my-style {
+        max-width: 657px;
+        width: 100%;
+    }
+</style>
+<DxFormLayout>
+    <DxFormLayoutItem ColSpanMd="12" Caption="Select the language of the document to open:">
+        <DxComboBox Data="@Cultures" Value="@Value" ValueChanged="@((string culture) => SelectedCultureChanged(culture))" CssClass="my-style"/>
+    </DxFormLayoutItem>
+    <DxFormLayoutItem ColSpanMd="12">
+        <DxRichEdit @ref="richEdit" CheckSpelling=true DocumentCulture=@documentCulture />
+    </DxFormLayoutItem>
+</DxFormLayout> 
+
+@code {
+    static IEnumerable<string> Cultures = new List<string>() {
+        "English",
+        "French",
+        "German",
+      };
+
+    DxRichEdit richEdit;
+    string documentCulture = "en-US";
+    string Value { get; set; } = Cultures.First();
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender) {
+        if (firstRender)
+            try {
+                await InitializeDocument();
+            }
+            catch (TaskCanceledException) { }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    async Task InitializeDocument() {
+        await richEdit.LoadDocumentAsync("Data/English.docx");
+    }
+
+    async Task SelectedCultureChanged(string culture) {
+        Value = culture;
+        switch(Value) {
+            case "French":
+                documentCulture = "fr-FR";
+                await richEdit.LoadDocumentAsync("Data/French.docx");
+                break;
+            case "German":
+                await richEdit.LoadDocumentAsync("Data/German.docx");
+                documentCulture = "de-DE";
+                break;
+            default:
+                await richEdit.LoadDocumentAsync("Data/English.docx");
+                documentCulture = "en-US";
+                break;
+        }
+    }
+}
