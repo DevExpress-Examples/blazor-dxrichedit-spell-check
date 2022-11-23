@@ -21,6 +21,22 @@ builder.Services.AddDevExpressBlazor().AddSpellCheck(opts => {
         AlphabetPath = "fr\\alphabet.txt",
         Culture = "fr-FR"
     });
+    opts.AddToDictionaryAction = (word, culture) => {
+        string path;
+        switch (culture.Name) {
+            case "de-DE":
+                path = opts.FileProvider.GetFileInfo("de//de.dic").PhysicalPath;
+                File.AppendAllText(path, "\n" + word);
+                break;
+            case "fr-FR":
+                path = opts.FileProvider.GetFileInfo("fr//fr.dic").PhysicalPath;
+                File.AppendAllText(path, "\n" + word);
+                break;
+            default:
+                break;
+        };
+    };
+    opts.MaxSuggestionCount = 7;
 });
 builder.Services.Configure<DevExpress.Blazor.Configuration.GlobalOptions>(options => {
     options.BootstrapVersion = DevExpress.Blazor.BootstrapVersion.v5;

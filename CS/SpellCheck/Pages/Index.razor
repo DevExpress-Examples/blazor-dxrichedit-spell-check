@@ -42,8 +42,8 @@
         Value = culture;
         switch(Value) {
             case "French":
-                documentCulture = "fr-FR";
                 await richEdit.LoadDocumentAsync("Data/French.docx");
+                documentCulture = "fr-FR";
                 break;
             case "German":
                 await richEdit.LoadDocumentAsync("Data/German.docx");
