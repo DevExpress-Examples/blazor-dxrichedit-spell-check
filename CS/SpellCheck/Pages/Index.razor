@@ -23,7 +23,7 @@
 
     DxRichEdit richEdit;
     string documentCulture = "en-US";
-    string Value { get; set; } = Cultures.First();
+    string Value = Cultures.First();
     
     protected override async Task OnAfterRenderAsync(bool firstRender) {
         if (firstRender)
