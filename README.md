@@ -30,8 +30,8 @@ Note that the service disables the default dictionary after you add another dict
 
 In the default configuration, the built-in spell check service hides the context menu's **Add to dictionary** command that allows users to add words to a dictionary. To display this command, assign a delegate method to the [AddToDictionaryAction](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckOptions.AddToDictionaryAction) spell check option. This delegate method should meet the following requirements:
 
-* Accepts the current document culture and a word to be added.
-* Writes the word to a dictionary file depending on the culture.
+* Accept the current document culture and a word to be added.
+* Write the word to a dictionary file depending on the document culture.
 
 The Rich Text Editor executes the method assigned to the `AddToDictionaryAction` property once a user clicks the **Add to dictionary** command.
 
