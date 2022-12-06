@@ -12,9 +12,9 @@ This example customizes the spell check service that is built in our [Blazor Ric
 
 Follow the steps below to configure the built-in service and enable the spell check feature.
 
-### Register the Service
+### Register and Configure the Service
 
-Call the [AddSpellCheck](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckExtensions.AddSpellCheck(IDevExpressBlazorBuilder--Action-SpellCheckOptions-)) extension method to register the built-in spell check service in your application. Within this method call, you can access and customize [spell check options](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckOptions).
+Call the [AddSpellCheck](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckExtensions.AddSpellCheck(IDevExpressBlazorBuilder--Action-SpellCheckOptions-)) extension method to register the built-in spell check service in your application. Within this method call, you can access and customize [spell check options](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckOptions) in the following ways.
 
 #### Add a Dictionary
 
