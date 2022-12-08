@@ -4,7 +4,11 @@
 <!-- default badges end -->
 # Blazor Rich Text Editor – How to Customize the Built-in Spell Check Service
 
-This example customizes the spell check service that is built in our [Blazor Rich Text Editor](https://docs.devexpress.com/Blazor/401891/rich-text-editor) component. As a result, the component can check spelling in documents in American English, French, and German. A [ComboBox](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxComboBox-2) above the Rich Text Editor allows you to switch between English, French, and German documents to explore how the service works.
+This example customizes the built-in spell check service of our [Blazor Rich Text Editor](https://docs.devexpress.com/Blazor/401891/rich-text-editor) component. 
+
+The code adds French and German dictionaries to the list that initially contains only the default American English dictionary. A [ComboBox](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxComboBox-2) above the Rich Text Editor allows you to switch between English, French, and German documents so you can try the spell checking functionality in all available languages.
+
+The example also changes the maximum number of suggestions and allows users to add words to dictionaries.
 
 ![Blazor DxRichEdit Customize the Spell Check Service](/image.gif)
 
@@ -21,7 +25,7 @@ Call the [AddSpellCheck](https://docs.devexpress.com/Blazor/DevExpress.Blazor.Ri
 The built-in service includes the default American English dictionary. Follow the steps bellow to add another dictionary of the [simple](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.Dictionary), [ISpell](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.ISpellDictionary), or [Hunspell](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.HunspellDictionary) type:
 
 * Assign a file provider to the [FileProvider](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckOptions.FileProvider) option so that the service can access dictionary files.
-* Use the [Dictionaries](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckOptions.Dictionaries) spell check option to access a list of added dictionaries.
+* Use the [Dictionaries](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckOptions.Dictionaries) spell check option to access the dictionary list.
 * Pass a dictionary to the list's `Add` method.
 
 Note that the service disables the default dictionary after you add another dictionary for the same culture.
