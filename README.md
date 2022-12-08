@@ -18,7 +18,7 @@ Follow the steps below to configure the built-in service and enable the spell ch
 
 ### Register and Configure the Service
 
-Call the [AddSpellCheck](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckExtensions.AddSpellCheck(IDevExpressBlazorBuilder--Action-SpellCheckOptions-)) extension method to register the built-in spell check service in your application. Within this method call, you can access and customize [spell check options](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckOptions) in the following ways.
+Call the [AddSpellCheck](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckExtensions.AddSpellCheck(IDevExpressBlazorBuilder--Action-SpellCheckOptions-)) extension method to register the built-in spell check service in your application. Within this method call, you can access and customize [spell check options](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.SpellCheckOptions) in the following ways:
 
 #### Add a Dictionary
 
@@ -47,7 +47,7 @@ The [MaxSuggestionCount](https://docs.devexpress.com/Blazor/DevExpress.Blazor.Ri
 
 Set the [CheckSpelling](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.DxRichEdit.CheckSpelling) property to `true` to enable the spell check feature. Use the [DocumentCulture](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.DxRichEdit.DocumentCulture) property to specify the [culture name](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.name?view=net-6.0) for an open document. An empty property value corresponds to an invariant culture.
 
-The Rich Text Editor uses all dictionaries to check spelling when the `DocumentCulture` property corresponds to an invariant culture. Otherwise, the Rich Text Editor uses only the dictionaries whose [culture](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.DictionaryBase.Culture) is invariant or matches the document's culture. Update the document culture each time a new document is opened.
+The Rich Text Editor uses all dictionaries to check spelling when the `DocumentCulture` property corresponds to an invariant culture. Otherwise, the Rich Text Editor uses only the dictionaries whose [culture](https://docs.devexpress.com/Blazor/DevExpress.Blazor.RichEdit.SpellCheck.DictionaryBase.Culture) is invariant or matches the document's culture. You need to update the document culture each time a new document is opened.
 
 ## Files to Review
 
