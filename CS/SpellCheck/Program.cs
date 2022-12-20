@@ -3,8 +3,7 @@ using Microsoft.AspNetCore.Components.Web;
 using DevExpress.Blazor.RichEdit.SpellCheck;
 using Microsoft.Extensions.FileProviders;
 
-var DictionaryFiles = new Dictionary<string, string>()
-{
+var DictionaryFiles = new Dictionary<string, string>() {
     { "de-DE", "de//de.dic" },
     { "fr-FR", "fr//fr.dic" },
 };
