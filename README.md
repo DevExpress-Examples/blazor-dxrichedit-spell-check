@@ -1,9 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/568709069/25.1.3%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1128858)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-[![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
-<!-- default badges end -->
 # Blazor Rich Text Editor – How to Customize the Built-in Spell Check Service
 
 This example customizes the built-in spell check service of the DevExpress [Blazor Rich Text Editor](https://docs.devexpress.com/Blazor/401891/rich-text-editor) component. 
@@ -12,7 +6,7 @@ The code adds French and German dictionaries to its list of supported dictionari
 
 This example also changes the maximum number of suggestions and allows users to add words to dictionaries.
 
-![Blazor DxRichEdit Customize the Spell Check Service](/image.gif)
+![Blazor DxRichEdit Customize the Spell Check Service](/spell-check.gif)
 
 ## Overview
 
@@ -64,7 +58,7 @@ The Rich Text Editor uses all dictionaries to check spelling when the `DocumentC
 ## More Examples
 
 - [Blazor Rich Text Editor - How to implement custom document save capabilities](https://github.com/DevExpress-Examples/blazor-dxrichedit-custom-saving)
-- [Blazor Rich Text Editor - How to export a document to a file (HTML format)](https://github.com/DevExpress-Examples/blazor-dxrichedit-export-to-html)
+- [Blazor Rich Text Editor - How to export a document to a file (DOC format)](https://github.com/DevExpress-Examples/blazor-dxrichedit-export-to-doc)
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
