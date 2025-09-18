@@ -35,7 +35,7 @@ builder.Services.AddDevExpressBlazor().AddSpellCheck(opts => {
     opts.MaxSuggestionCount = 7;
 });
 builder.Services.Configure<DevExpress.Blazor.Configuration.GlobalOptions>(options => {
-    options.BootstrapVersion = DevExpress.Blazor.BootstrapVersion.v5;
+    options.SizeMode = DevExpress.Blazor.SizeMode.Medium;
 });
 builder.WebHost.UseWebRoot("wwwroot");
 builder.WebHost.UseStaticWebAssets();
