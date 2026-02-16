@@ -66,7 +66,7 @@ The Rich Text Editor uses all dictionaries to check spelling when the `DocumentC
 - [Blazor Rich Text Editor - How to implement custom document save capabilities](https://github.com/DevExpress-Examples/blazor-dxrichedit-custom-saving)
 - [Blazor Rich Text Editor - How to export a document to a file (DOC format)](https://github.com/DevExpress-Examples/blazor-dxrichedit-export-to-doc)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=blazor-richedit-spell-check&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=blazor-richedit-spell-check&~~~was_helpful=no)
 
