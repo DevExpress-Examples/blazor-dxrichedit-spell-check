@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SpellCheck": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:2784;http://localhost:2785"
+    }
+  }
+}
